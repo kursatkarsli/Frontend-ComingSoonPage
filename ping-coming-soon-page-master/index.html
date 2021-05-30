@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@1,300&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Ping coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      margin: 0;
+      box-sizing: border-box;
+      font-size: 12px;
+      background-color: whitesmoke;
+      font-family: 'Libre Franklin', sans-serif;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      width: 1000px;
+      height: 563px;
+      align-items: center;
+      justify-content: center;
+      margin: 0px auto;
+      text-align: center;
+
+    }
+
+    .row {
+      display: flex;
+      margin-top: 20px;
+      width: 350px;
+      align-items: center;
+      flex-direction: column;
+      height: 100%;
+      width: 50%;
+    }
+
+    span {
+      color: hsl(0, 0%, 59%);
+    }
+
+    .email {
+      color: hsl(0, 0%, 59%);
+      padding: 0.6rem;
+      border: 1px solid hsl(0, 0%, 59%);
+      border-radius: 50px;
+      width: 16rem;
+    }
+
+    .email+button {
+      background-color: hsl(210, 98%, 45%);
+      padding: 0.6rem;
+      border: 1px solid hsl(210, 98%, 45%);
+      border-radius: 50px;
+      box-shadow: 0 3px 6px #4d7cf37c;
+      width: 200px;
+
+    }
+
+    .input-section {
+      margin-top: 25px;
+    }
+
+    .image {
+      width: 100%;
+      margin-top: 32px;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    @media screen and (max-width: 700px) {
+      .container {
+        max-width: 450px;
+      }
+
+      .email+button {
+        margin-top: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="logo"><img src="./images/logo.svg" alt="logo"></div>
+      <div>
+        <h1 class="description"><span>We are launching</span> soon!</h1>
+        <p>Subscribe and get notified</p>
+      </div>
+      <div class="input-section">
+        <input class='email' type="email" value="Please Enter The Email" />
+        <button>Notify Me</button>
+      </div>
+      <img class='image' src="./images/illustration-dashboard.png">
+    </div>
+  </div>
+
+  <footer>
+    <div class="icons">
+
+    </div>
+    <p class="attribution">
+      &copy; Copyright Ping. All rights reserved.<br>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+</body>
+
+</html>
